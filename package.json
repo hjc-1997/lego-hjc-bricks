@@ -11,7 +11,8 @@
         "lint": "vue-cli-service lint --max-warnings 5",
         "build:esm": "rollup --config build/rollup.esm.config.js",
         "build:umd": "rollup --config build/rollup.umd.config.js",
-        "clean": "rimraf ./dist"
+        "clean": "rimraf ./dist",
+        "prepublishOnly": "npm run build"
     },
     "husky": {
         "hooks": {
@@ -58,16 +59,11 @@
     "peerDependencies": {
         "vue": "^3.0.0"
     },
-    "homepage": "https://github.com/imooc-lego/lego-components",
     "keywords": [
         "Component",
         "UI",
         "Vue3"
     ],
     "license": "MIT",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/imooc-lego/lego-components"
-    },
     "types": "dist/index.d.ts"
 }
