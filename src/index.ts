@@ -17,7 +17,6 @@ import LImage from "./components/LImage";
 import LShape from "./components/LShape";
 
 const components = [LText, LImage, LShape];
-
 const install = (app: App) => {
     components.forEach((component: any) => {
         console.log(component);
