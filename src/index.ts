@@ -18,6 +18,7 @@ import LShape from "./components/LShape";
 
 const components = [LText, LImage, LShape];
 
+console.log(9999);
 const install = (app: App) => {
     components.forEach((component: any) => {
         console.log(component);
