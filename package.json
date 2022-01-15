@@ -8,10 +8,16 @@
         "build": "npm run clean && npm run build:esm && npm run build:umd",
         "test:watch": "vue-cli-service test:unit --watch",
         "test": "vue-cli-service test:unit",
+        "lint": "vue-cli-service lint --max-warnings 10",
         "build:esm": "rollup --config build/rollup.esm.config.js",
         "build:umd": "rollup --config build/rollup.umd.config.js",
         "clean": "rimraf ./dist",
         "prepublishOnly": "npm run build"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "npm run lint "
+        }
     },
     "main": "dist/lego-hjc-bricks.umd.js",
     "module": "dist/lego-hjc-bricks.esm.js",
