@@ -10,7 +10,8 @@
         "test": "vue-cli-service test:unit",
         "build:esm": "rollup --config build/rollup.esm.config.js",
         "build:umd": "rollup --config build/rollup.umd.config.js",
-        "clean": "rimraf ./dist"
+        "clean": "rimraf ./dist",
+        "prepublishOnly": "npm run build"
     },
     "main": "dist/lego-hjc-bricks.umd.js",
     "module": "dist/lego-hjc-bricks.esm.js",
