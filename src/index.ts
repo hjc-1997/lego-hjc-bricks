@@ -24,7 +24,6 @@ const install = (app: App) => {
         app.component(component.name, component);
     });
 };
-
 export { LText, LImage, LShape, install };
 export default {
     install,
